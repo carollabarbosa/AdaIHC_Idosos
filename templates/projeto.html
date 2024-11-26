@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu de Acessibilidade Compacto</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-black transition-all duration-300" id="main-content">
+  
+  <!-- Menu de Acessibilidade Compacto -->
+  <div class="fixed top-2 right-2 z-50 p-2 bg-gray-100 shadow-md rounded-md w-36">
+    <h2 class="font-semibold text-sm text-center mb-2">Acessibilidade</h2>
+    
+    <!-- Botão de Contraste -->
+    <button onclick="toggleContrast()" class="bg-blue-500 text-white text-xs py-1 rounded mb-1 w-full hover:bg-blue-600">
+      Contraste
+    </button>
+    
+    <!-- Botão Aumentar Fonte -->
+    <button onclick="increaseFontSize()" class="bg-green-500 text-white text-xs py-1 rounded mb-1 w-full hover:bg-green-600">
+      Aumentar Fonte
+    </button>
+    
+    <!-- Botão Diminuir Fonte -->
+    <button onclick="decreaseFontSize()" class="bg-red-500 text-white text-xs py-1 rounded mb-1 w-full hover:bg-red-600">
+      Diminuir Fonte
+    </button>
+
+    <!-- Modo Alta Legibilidade para TDHA -->
+    <button onclick="toggleLegibility()" class="bg-purple-500 text-white text-xs py-1 rounded w-full hover:bg-purple-600">
+      Legibilidade
+    </button>
+  </div>
+
+  <!-- Conteúdo principal para teste de acessibilidade -->
+  <div id="content" class="p-5 text-base">
+    <header class="text-gray-600 body-font">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-blue-500 rounded-full" viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span class="ml-3 text-xl">ADA IA Detector de Fake News</span>
+        </a>
+        <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+            <a href= "/" class="mr-5 hover:text-gray-900">Página Inicial</a>
+            <a href= "/projeto" class="mr-5 hover:text-gray-900">Projeto</a>
+            <a href="/prediction" class="mr-5 hover:text-gray-900">verificar</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h2 class="text-xs text-blue-500 tracking-widest font-medium title-font mb-1">Sobre o Projeto</h2>
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">ADA IA</h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base"><br>ADA IA é um projeto de mestrado desenvolvido no Laboratório Sistemas Web e Multimídia Interativos do Instituto de Ciências Matemáticas e de Computação (ICMC) da Universidade de São Paulo (USP), projetado especialmente para o público 60+. A ferramenta utiliza Machine Learning, com foco em um modelo de Regressão Logística que atinge uma precisão de 86%. No desenvolvimento, foram testados cinco modelos supervisionados, além de abordagens avançadas com Redes Neurais e Aprendizado Profundo (Deep Learning).</br>
+
+A ADA IA possui um corpus de 3.594 notícias classificadas nos temas de Política, Política Internacional, Saúde, Artigos Científicos, entre outros. O objetivo é auxiliar idosos na verificação de notícias, proporcionando uma interface intuitiva e acessível.
+
+Segundo dados recentes (incluir fonte e números), a população idosa está cada vez mais presente na internet e nas redes sociais, embora uma parcela significativa ainda tenha dificuldades em distinguir conteúdos falsos dos verdadeiros devido a barreiras no uso de tecnologias e no conhecimento sobre segurança da informação.</p>
+
+
+          </div>
+        </div>
+      </h1>  Apoio e Agradecimento : </h1>
+      <div class="flex gap-8 justify-center">
+        <!-- Container para CAPES -->
+        <div class="text-center">
+          <div class="h-36 w-36 rounded-full overflow-hidden mx-auto bg-gray-200 flex items-center justify-center">
+            <img class="h-19 w-17 object-cover" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Identidade_Visual_CAPES.png/648px-Identidade_Visual_CAPES.png" alt="logo">
+          </div>
+          <h3 class="text-base font-semibold tracking-tight text-gray-900 mt-4">CAPES</h3>
+          <p class="text-sm font-semibold text-indigo-600">Realizado com apoio da Coordenação de Aperfeiçoamento de Pessoal de Nível Superior - Brasil (CAPES) - Código de Financiamento 001</p>
+        </div>
+      
+        <!-- Container para ICMC USP -->
+        <div class="text-center">
+          <div class="h-36 w-36 rounded-full overflow-hidden mx-auto bg-gray-200 flex items-center justify-center">
+            <img class="h-19 w-17 object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCRajLFd6JIL5AoHuLLonsbSscKvZplvrbFQ&s" alt="logo">
+          </div>
+          <h3 class="text-base font-semibold tracking-tight text-gray-900 mt-4">ICMC USP</h3>
+          <p class="text-sm font-semibold text-indigo-600">ICMC - Instituto De Ciências Matemáticas e de Computação</p>
+        </div>
+      </div>
+      
+                      
+            </li>
+      
+            <!-- More people... -->
+          </ul>
+        </div>
+      </div>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Scripts para funcionalidade -->
+  <script>
+    let isHighContrast = false;
+    let isHighLegibility = false;
+    let fontSize = 16;
+
+    function toggleContrast() {
+      const body = document.getElementById('main-content');
+      isHighContrast = !isHighContrast;
+      if (isHighContrast) {
+        body.classList.add('bg-black', 'text-white');
+      } else {
+        body.classList.remove('bg-black', 'text-white');
+      }
+    }
+
+    function increaseFontSize() {
+      fontSize += 2;
+      document.getElementById('content').style.fontSize = fontSize + 'px';
+      updateFontSize();
+    }
+
+    function decreaseFontSize() {
+      if (fontSize > 10) {
+        fontSize -= 2;
+        document.getElementById('content').style.fontSize = fontSize + 'px';
+        updateFontSize();
+      }
+    }
+
+    function toggleLegibility() {
+      const content = document.getElementById('content');
+      isHighLegibility = !isHighLegibility;
+      if (isHighLegibility) {
+        content.classList.add('tracking-wider', 'leading-relaxed');
+      } else {
+        content.classList.remove('tracking-wider', 'leading-relaxed');
+      }
+    }
+
+    // Função de atualização do tamanho de fonte
+    function updateFontSize() {
+      const elements = document.querySelectorAll('#content, #content *');
+      elements.forEach(el => {
+        el.style.fontSize = fontSize + 'px';
+      });
+    }
+  </script>
+</body>
+</html>
